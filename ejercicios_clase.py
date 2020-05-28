@@ -24,9 +24,13 @@ def ej1():
     # para que el "while" itere siempre que <x sea menor a 6>
     # Además, complete la línea de código necesaria para que
     # el valor de "x" incremente "1" en cada iteración
-
-    while condicion:    # reemplace "condicion" por lo que crea necesario
-        print("Valor de x =", x)
+    val_max = 6
+    while x <= val_max:    # reemplace "condicion" por lo que crea necesario
+        if x == val_max:
+            print('x=', x, 'se termina el programa')
+            break
+        x += 1
+    
         # Coloque la línea de código para que "X" incremente "1"
 
     x = 5
@@ -35,8 +39,10 @@ def ej1():
     # Además, complete la línea de código necesaria para que
     # el valor de "x" decremente "1" en cada iteración
 
-    while condicion:    # reemplace "condicion" por lo que crea necesario
+    val_max1 = 0
+    while x >= val_max1:    # reemplace "condicion" por lo que crea necesario
         print("Valor de x =", x)
+        
         # Coloque la línea de código para que "X" decremente "1"
 
 
