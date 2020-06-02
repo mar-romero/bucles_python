@@ -160,9 +160,9 @@ def bucle_while_for():
 
     print("Ingrese un número mayor o igual a cero")
     while True:
+
         # Tomamos el valor de la consola
         numero = int(input())
-
         # Verificamos si el número es negativo
         if numero < 0:
             print('Hasta acá llegamos!')
@@ -190,7 +190,7 @@ def bucle_while_for():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    bucle_while()
+    #bucle_while()
     #bucle_for()
     #contador()
     #sumatoria()

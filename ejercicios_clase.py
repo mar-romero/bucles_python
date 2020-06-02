@@ -146,8 +146,21 @@ def ej5():
 
     inicio = int(input('Ingrese el primero número de la secuencia\n'))
     # fin....
+    fin = int(input('Ingrese el ultimo numero de la secuencia\n'))
 
+    lista = [inicio, fin]
+    suma = 0
+    
+    for x in range(inicio, fin + 1):
+        suma += x
+    print('suma', suma)
+
+    
     # for ... in range(....)
+
+    
+
+    
 
     # Imprimir el valor de la sumatoria
 
@@ -163,9 +176,17 @@ def ej6():
 
     inicio = int(input('Ingrese el primero número de la secuencia\n'))
     # fin....
-
+    fin = int(input('Ingrese el ultimo número de la secuencia\n'))
+    
     cantidad_numeros_positivos = 0  # Inicializo el contador en 0
     #cantidad_numeros_negativos
+   
+    cantidad_numeros_negativos = 0
+    
+    for x in range(inicio, fin + 1):
+        if x >= 0:
+            cantidad_numeros_positivos 
+            print('la cantidad de numeros positivos son', cantidad_numeros_positivos)
 
     # for ... in range(....)
 
@@ -177,6 +198,6 @@ if __name__ == '__main__':
     #ej1()
     #ej2()
     #ej3()
-    ej4()
+    #ej4()
     #ej5()
-    #ej6()
+    ej6()
