@@ -74,6 +74,44 @@ def ej2():
     Se debe debe imprimir un cartel de error si el operador ingresado no es
     alguno de lo soportados o no es la palabra "FIN"
     '''
+    
+   
+    while True :
+        ini = str (input('Ingrese inicio o fin:\n'))
+        if ini == 'fin' :
+            print('Fin de las operaciones')
+            break
+        elif ini == "inicio" :
+            num_1 = float(input('Ingrese el primer número:\n'))
+            ope_1 = str(input('Ingrese la la operacion que desea:\n'))
+            num_2 = float(input('Ingrese el segundo número:\n'))
+
+
+    
+            suma = num_1 + num_2
+            res = num_1 - num_2
+            mul = num_1 * num_2
+            div = num_1 / num_2
+            pot = num_1 ** num_2
+
+            if (ope_1 == '+') :
+                print('{} es el resultado' .format(suma))
+            elif (ope_1 == '-') :
+                print('{} es el resultado' .format(res))
+            elif (ope_1 == "*") :
+                print('{} es el resultado' .format(mul))
+            elif (ope_1 == '/'):
+                print('{} es el resultado' .format(div))
+            elif (ope_1 == '**') :
+                print('{} es el resultado' .format(pot))
+            else :
+                print('No es una operacion mapalatica')
+            continue
+        else:
+            print ('Dato ingresado invalido')
+        break
+
+        
 
 
 def ej3():
