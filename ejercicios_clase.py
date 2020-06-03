@@ -148,7 +148,7 @@ def ej5():
     # fin....
     fin = int(input('Ingrese el ultimo numero de la secuencia\n'))
 
-    lista = [inicio, fin]
+    lista = []
     suma = 0
     
     for x in range(inicio, fin + 1):
@@ -178,20 +178,25 @@ def ej6():
     # fin....
     fin = int(input('Ingrese el ultimo número de la secuencia\n'))
     
+    lista = []
+    lista_a = []
     cantidad_numeros_positivos = 0  # Inicializo el contador en 0
     #cantidad_numeros_negativos
-   
-    cantidad_numeros_negativos = 0
-    
-    for x in range(inicio, fin + 1):
+    for x in range (inicio, fin + 1):
         if x >= 0:
-            cantidad_numeros_positivos 
-            print('la cantidad de numeros positivos son', cantidad_numeros_positivos)
+            lista.append(x)
+    print('la cantidad de numeros positivos son:', len(lista))
+    for y in range (inicio, fin + 1):
+        if y < 0:
+            lista_a.append(y)
+    print('la cantidad de numeros negativos son:', len(lista_a))
+
 
     # for ... in range(....)
 
     # Imprimir el valor de la cantidad de números positivos y negativos
-
+    #NO PUDE HACERLO CON CANTIDAD DE NUMEROS POSITIVOS += 1 LO HICE AGREGANDO EL NUMERO A UNA LISTA
+    #Y DESPUES CONTAR LA CANTIDAD DE LA LISTA
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
